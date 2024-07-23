@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pricing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Fictional Products</h1>
+            <p>Select the perfect plan for your needs.</p>
+            <!-- Toggle for Monthly/Yearly pricing -->
+            <div class="toggle-container">
+                <span class="toggle-label">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Yearly</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Table Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h2>Basic</h2>
+                    <p class="price" data-monthly="$15" data-yearly="$150">$15</p>
+                </div>
+                <div class="card-body">
+                    <p>Great for personal use</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Watch Prime Video on multiple devices in 4K UHD (1080p) quality.(ad-free)</li>
+                        <li><i class="fas fa-check-circle"></i> Get unlimited FREE Same-Day/One-Day free delivery on Amazon purchases.</li>
+                        <li><i class="fas fa-check-circle"></i> Enjoy ad-free music on Prime Music and many more benefits.</li>
+                        <li><i class="fas fa-check-circle"></i> Download devices upto 1.</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+            <div class="pricing-card highlight">
+                <div class="card-header">
+                    <h2>Standard</h2>
+                    <p class="price" data-monthly="$25" data-yearly="$250">$25</p>
+                </div>
+                <div class="card-body">
+                    <p>Best for small teams</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i>  Watch Prime Video on multiple devices in 4K UHD (2160p) quality. (ad-free)</li>
+                        <li><i class="fas fa-check-circle"></i> Get unlimited FREE Same-Day/One-Day free delivery on Amazon purchases.</li>
+                        <li><i class="fas fa-check-circle"></i> Enjoy ad-free music on Prime Music and many more benefits.</li>
+                        <li><i class="fas fa-check-circle"></i> Download devices upto 2</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h2>Premium</h2>
+                    <p class="price" data-monthly="$50" data-yearly="$500">$50</p>
+                </div>
+                <div class="card-body">
+                    <p>Perfect for large teams</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i>  Watch Prime Video on multiple devices in 4K UHD (2160p) quality. (ad-free)</li>
+                        <li><i class="fas fa-check-circle"></i> Get unlimited FREE Same-Day/One-Day free delivery on Amazon purchases.</li>
+                        <li><i class="fas fa-check-circle"></i> Enjoy ad-free music on Prime Music and many more benefits.</li>
+                        <li><i class="fas fa-check-circle"></i>Feel free to contact them.</li>
+                        <li><i class="fas fa-check-circle"></i> Download devices upto 2</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Dynamic Pricing. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Pricing Toggle -->
+    <script src="script.js"></script>
+</body>
+</html>
